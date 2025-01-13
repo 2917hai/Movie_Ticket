@@ -1,0 +1,48 @@
+{
+  "movie": [
+    {
+      "Name": "Umesh Israni",
+      "Mobile": 6261437008,
+      "Email": "sid@gmail.com",
+      "Age": 25,
+      "Address": "Bhopal",
+      "Date": "20-01-1999",
+      "City": "Bhopal",
+      "DOB": "13-12-1999",
+      "id": "e32d"
+    },
+    {
+      "Name": "Umesh kumar",
+      "Mobile": "0780386984",
+      "Email": "yadavumeshkumar815@gmail.com",
+      "Age": "25",
+      "Address": "tit road balvihar anand nagar bhopal",
+      "Date": "2025-01-23",
+      "City": "Bhopal",
+      "DOB": "2025-01-21",
+      "id": "6693"
+    },
+    {
+      "Name": "Umesh kumar Yadav",
+      "Mobile": "07803869841",
+      "Email": "yadavumeshkumar815@gmail.com",
+      "Age": "21",
+      "Address": "tit road balvihar anand nagar bhopal",
+      "Date": "2025-01-10",
+      "City": "Bhopal",
+      "DOB": "2025-01-15",
+      "id": "b010"
+    },
+    {
+      "id": "4a26",
+      "Name": "Umesh kumar Yadav",
+      "Mobile": "07803869841",
+      "Email": "yadavumeshkumar815@gmail.com",
+      "Age": "21",
+      "Address": "tit road balvihar anand nagar bhopal",
+      "Date": "2025-01-15",
+      "City": "Bhopal",
+      "DOB": "2025-01-22"
+    }
+  ]
+}

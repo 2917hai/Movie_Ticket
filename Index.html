@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="image/bookkaroLogo.webp">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- <style>
+        #Rname::placeholder
+        {
+            color: red;
+        }
+    </style> -->
+  
+</head>
+<body>
+    <header>
+        <nav >
+            <img   data-aos-duration="800" data-aos="fade-right" src="image/Inox.avif" alt="">
+            <a data-aos-duration="800" data-aos="fade-down" href="Index.html"><div class="home"><i class="fa-solid fa-house"></i>Home</div></a>
+            <a data-aos-duration="800"  data-aos="fade-up" href="#commingSoon"><div class="showTime"><i class="fa-regular fa-calendar-days"></i>ShowTime</div></a>
+            <a data-aos-duration="800" data-aos="fade-down" href="#nowShowing"><div class="cinema"><i class="fa-solid fa-film"></i>Cinema</div></a>
+            <a data-aos-duration="800"  data-aos="fade-up" href="#offer"><div class="offer"><i class="fa-solid fa-gift"></i>Offers</div></a>
+            <a data-aos-duration="800" data-aos="fade-down" href="#nowShowing"><div class="movie"><i class="fa-solid fa-clapperboard"></i>Movies</div></a>
+            <a data-aos-duration="800"  data-aos="fade-up" href="#tailers"><div class="threatres"><i class="fa-solid fa-tv"></i>Threatres</div></a>
+            <a data-aos-duration="800" data-aos="fade-down" href="Ticket.html"><div class="ticket"><i class="fa-solid fa-ticket"></i>Ticket</div></a>
+            <!-- <a href="#"><div class="passport"><i class="fa-regular fa-star"></i>Passport</div></a> -->
+            <div data-aos-duration="800" data-aos="fade-down" style="cursor:pointer;" onclick="moreOpen()" onmouseenter="moreOpen()" class="bar"><i class="fa-solid fa-bars"></i>More<i class="fa-solid fa-chevron-down"></i></div>
+            <div data-aos-duration="800"  data-aos="fade-up" class="search"><i class="fa-solid fa-magnifying-glass"></i><input type="text"  placeholder="Search..."></div>
+            <div data-aos-duration="800" data-aos="fade-down" class="location" ><i class="fa-solid fa-location-crosshairs"></i><p id="yourlocation">Location</p><i id="show" onclick="showlocation()" class="fa-solid fa-chevron-down"></i><i onclick="locationhide()" id="hide" class="fa-solid fa-chevron-down"></i></div>
+           <p data-aos-duration="800" data-aos="fade-down-left" id="profile" style="font-weight: bold; color: red; margin-top: 10px;"> <div class="login" onclick="login()" >Login <i class="fa-solid fa-user"></i></div></p>
+           <i data-aos-duration="800" data-aos="fade-down-left" id="log" onclick="logout()" style="font-size: 20px; padding-top: 15px; padding-left: 30px;" class="fa-solid fa-right-from-bracket"></i>
+            
+        </nav>
+    </header>
+
+
+
+    <section id="details">
+        <h1>YEH JAWAANI HAI DEEWANI (RE RELEASE)</h1>
+        <div onclick="closeKaro()" class="close">close</div>
+        <p id="time">U/A .2h 41m .May 31, 2013 . Hindi</p>
+        <h5>Synopsis</h5>
+        <p id="synp">On a trekking trip, an introverted Naina falls for a charming ex-classmate, whose thirst for adventure drives them apart. Years later, their paths cross again.</p>
+        <h2>Cast</h2>
+    <div class="cast">
+           
+        <div class="act1"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/act1.jpg" alt=""></div>
+        <div class="act2"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/act2.jpg" alt=""></div>
+        <div class="act3"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/act3.jpg" alt=""></div>
+        <div class="act4"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/act4.jpg" alt=""></div>
+        <div class="act5"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/act5.jpg" alt=""></div>
+        <div class="act6"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/act6.jpg" alt=""></div>
+        <div class="act7"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/act7.jpg" alt=""></div>
+        <div class="act8"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/act8.jpg" alt=""></div>
+        <div class="act9"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/act9.jpg" alt=""></div>
+        <div class="act10"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/act10.jpg" alt=""></div>
+   </div>
+   <h2 onclick="done()">Crew</h2>
+   <div class="crew">
+    <div class="crew1"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/crew1.jpg" alt=""></div>
+    <div class="crew2"><img style="height: 200px; width: 150px; border-radius: 20px;" src="image/crew2.jpg" alt=""></div>
+   </div>
+   <h2 style="padding-top: 50px;">backdrops</h2>
+   <div class="backdrops">
+    <div class="back1"><img style="height: 200px; width: 320px; border-radius: 20px;" src="image/back2.jpg" alt=""></div>
+    <div class="back3"><img style="height: 200px; width: 320px; border-radius: 20px;" src="image/back3.jpg" alt=""></div>
+    <div class="back4"><img style="height: 200px; width: 320px; border-radius: 20px;" src="image/back4.jpg" alt=""></div>
+    <div class="back5"><img style="height: 200px; width: 320px; border-radius: 20px;" src="image/back5.jpg" alt=""></div>
+    <div class="back6"><img style="height: 200px; width: 320px; border-radius: 20px;" src="image/back6.jpg" alt=""></div>
+    <div class="back7"><img style="height: 200px; width: 320px; border-radius: 20px;" src="image/back9.jpg" alt=""></div>
+    <div class="back8"><img style="height: 200px; width: 320px; border-radius: 20px;" src="image/back7.jpg" alt=""></div>
+    <div class="back9"><img style="height: 200px; width: 320px; border-radius: 20px;" src="image/back8.jpg" alt=""></div>
+    <div class="back10"><img style="height: 200px; width: 320px; border-radius: 20px;" src="image/back9.jpg" alt=""></div>
+   </div>
+
+   <h2 style="margin-top: 50px; margin-top: 500px;">Also Showing</h2>
+   <div class="showing">
+    <div class="show1"><img style="height: 420px; width: 320px;" src="image/mv1.avif" alt=""></div>
+    <div class="show2"> <img style="height: 420px; width: 320px;" src="image/mv2.webp" alt=""></div>
+    <div class="show3"> <img style="height: 420px; width: 320px;" src="image/mv3.avif" alt=""></div>
+    <div class="show4"> <img style="height: 420px; width: 320px;" src="image/mv4.webp" alt=""></div>
+
+   </div>
+</section>
+
+
+
+
+
+    <section id="login">
+        <form action="">
+            <h2>User Login Page</h2> <i id="loginPageHide" class="fa-solid fa-xmark"></i>
+            <p id="error" style="font-size: 30px; color: red;"></p>
+            <p> Enter Username: <input id="logname" type="text" placeholder="Enter Username"><br></p>
+           <p>Enter Password: <input id="logpass" type="text" placeholder="Enter Password"><br></p> 
+               <button onclick="return loginKaro()" type="submit" value="login" id="loginButton">Login</button>
+
+               <h1 id="nahi">Don't have a Account </h1>
+               <h1 onclick="register()" ><a href="#Register">Resister Now</a></h1>
+        </form>
+    </section>
+
+
+
+
+
+
+
+    <section id="location">
+        <div class="location">
+            <p id="bhopal">Bhopal- MP</p>
+            <p id="indore">Indore- MP</p>
+            <p id="banaras">Banaras- UP</p>
+            <p id="mumbai">Mumbai- MH</p>
+            <p id="prayagaraj">Prayagraj- UP</p>
+            <p id="rewa">Rewa- MP</p>
+        </div>
+
+    </section>
+   
+
+  
+
+
+
+
+    <section id="Register">
+        <form action="">
+           <h2>User Resister Page</h2> <i id="registerPageHide" class="fa-solid fa-xmark"></i>
+           <p id="error"></p>
+           <p > Enter Username: <input id="Rname" type="text" placeholder="Enter Username"><br></p>
+           <p >Enter Password: <input id="Rpass"type="text" placeholder="Enter Password"><br></p> 
+           <p >Re-enter Password: <input id="Rcpass"type="text" placeholder="Re-enter Password"><br></p>
+                  <button onclick="return RegisterKaro()" type="submit" value="register" id="registerButton">Register</button>
+
+               <h1 id="nahi">I have a Account </h1>
+               <h1 onclick="login() "><a href="#login">Login</a></h1>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+   <section id="bookKaro">
+    <h1 id="movieName()"><p> Movie Name hai </p>-(3D)- <span>(Hindi)</span></h1>
+    <span style="display: flex; gap: 50px; padding-top: 10px;">
+        <div style="margin-left: 50px; font-size: 15px; padding: 5px; border-radius: 20px; border: 1px solid black;" class="action ">ACTION</div>
+    <div style="padding: 5px; font-size: 15px; border-radius: 20px; border: 1px solid black;" class="Thriller">THRILLER</div>
+    </span>
+    <hr>
+    <div class="nav2">
+        <div class="date">
+            <p id="yesterday"></p>
+            <p  id="today"></p>
+            <p id="tomorrow"></p>
+        </div>
+        <div class="option">
+            <p onclick="priceRange()">Filter price Range  <select name="" id="priceSet">
+                <option value="one">Rs- 0-100</option>
+                <option value="two">Rs- 101-200</option>
+                <option selected value="three">Rs- 201-300</option>
+                <option value="four">Rs- 301-400</option>
+                <option value="five">Rs- 401-500</option>
+            </select></p>
+            <p onclick="timeRange()">Filter Show Timmng
+                <select name="" id="timeSet">
+                    <option value="morning"> Morning.    12:00-11:59 AM</option>
+                    <option value="Afternoon">Afternoon.    12:00-3:59 PM</option>
+                    <option selected value="evening">Evening.    4:00-6:59 PM</option>
+                    <option value="night">Night.    7:00-11:59 PM</option>
+                </select>
+            </p>
+        </div>
+    </div>
+    <div class="brandwithPrice1">
+       <div class="first1" >
+        <p id="rate">RS. 140.00</p>
+        <p id="type">Premium</p>
+        <p id="status" style="color: green;">Available</p>
+       </div> 
+       <div class="second2">
+        <p id="rate">RS. 140.00</p>
+        <p id="type">Normal</p>
+        <p id="status" style="color: green;">Available</p>
+       </div>
+       <div class="third3">
+        <p id="rate">RS. 140.00</p>
+        <p id="type">Executive</p>
+        <p id="status" style="color: green;">Available</p>
+       </div>
+    </div>
+    <div class="brandwithPrice2">
+        <div class="first1">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Premium</p>
+         <p id="status" style="color: green;">Available</p>
+        </div> 
+        <div class="second2">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Normal</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+        <div class="third3">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Executive</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+     </div>
+     <div class="brandwithPrice3">
+        <div class="first1">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Premium</p>
+         <p id="status" style="color: green;">Available</p>
+        </div> 
+        <div class="second2">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Normal</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+        <div class="third3">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Executive</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+     </div>
+  
+    
+    <hr>
+      
+    <div style="display: flex;" id="cinemaList1">
+        <div class="cinemaname">
+           <a  style="text-decoration: none;" href="howManySeat.html"> <p style="padding: 10px; font-weight: bold; cursor: pointer; "> <i  style="padding-right: 5px;" class="fa-regular fa-heart"></i> Cinepolis: Aashima Mall, Bhopal</p> </a>
+            <span style="display: flex; gap: 50px;">
+              <p style="color: green; padding-left: 20px;"> <i class="fa-solid fa-mobile"></i> M-Ticket</p> 
+              <p style="color: rgb(204, 94, 20);"> <i class="fa-solid fa-plate-wheat"></i>Food & Beverage</p>
+            </span>
+        </div>
+      <div class="info">
+        <p><i style="padding-right: 5px; font-size: 15px;" class="fa-solid fa-circle-info"></i>info</p>
+    </div>
+    <div style="display: flex; gap: 10px;" class="alltime">
+       <a style="text-decoration: none;" href="howManySeat.html">  <div onmouseenter="priceOne1()" onmouseleave="priceOnel1()" class="firstTime" >10:20 AM</div></a>
+       <a  style="text-decoration: none;" href="howManySeat.html">  <div  onmouseenter="priceOne2()" onmouseleave="priceOnel2()" class="secondTime">02:25 PM</div></a>
+        <a  style="text-decoration: none;" href="howManySeat.html">  <div   onmouseenter="priceOne3()" onmouseleave="priceOnel3()" class="thirdTime">  06:30 PM</div></a>
+    </div>
+  
+    </div>
+    <p id="i8" style="font-weight: bold;"> <i style="color: rgb(246, 160, 12); margin-top: 20px; margin-left: 520px; padding-right: 5px; font-size: 12px;" class="fa-solid fa-circle"></i>Cancellation Available</p>
+   
+    <div class="brandwithPrice4">
+        <div class="first1">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Premium</p>
+         <p id="status" style="color: green;">Available</p>
+        </div> 
+        <div class="second2">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Normal</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+        <div class="third3">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Executive</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+     </div>
+     <div class="brandwithPrice5">
+         <div class="first1">
+          <p id="rate">RS. 240.00</p>
+          <p id="type">Premium</p>
+          <p id="status" style="color: green;">Available</p>
+         </div> 
+         <div class="second2">
+          <p id="rate">RS. 140.00</p>
+          <p id="type">Normal</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+         <div class="third3">
+          <p id="rate">RS. 140.00</p>
+          <p id="type">Executive</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+      </div>
+      <div class="brandwithPrice6">
+         <div class="first1">
+          <p id="rate">RS. 150.00</p>
+          <p id="type">Premium</p>
+          <p id="status" style="color: green;">Available</p>
+         </div> 
+         <div class="second2">
+          <p id="rate">RS. 150.00</p>
+          <p id="type">Normal</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+         <div class="third3">
+          <p id="rate">RS. 300.00</p>
+          <p id="type">Executive</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+      </div>
+
+      <hr>
+    <div style="display: flex;" id="cinemaList2">
+        <div class="cinemaname">
+            <a  style="text-decoration: none;" href="howManySeat.html"> <p style="padding: 10px; font-weight: bold; cursor: pointer; "> <i  style="padding-right: 5px;" class="fa-regular fa-heart"></i> Raj Big 2 Cinema: Bhopal</p> </a>
+            <span style="display: flex; gap: 50px;">
+              <p style="color: green; padding-left: 20px;"> <i class="fa-solid fa-mobile"></i> M-Ticket</p> 
+              <p style="color: rgb(204, 94, 20);"> <i class="fa-solid fa-plate-wheat"></i>Food & Beverage</p>
+            </span>
+        </div>
+      <div class="info">
+        <p><i style="padding-right: 5px; font-size: 15px;" class="fa-solid fa-circle-info"></i>info</p>
+    </div>
+    <div style="display: flex; gap: 10px;" class="alltime">
+        <a  style="text-decoration: none;" href="howManySeat.html">  <div onmouseenter="priceOne4()" onmouseleave="priceOnel4()"  class="firstTime">06:20 AM</div></a>
+            <a  style="text-decoration: none;" href="howManySeat.html"> <div onmouseenter="priceOne5()" onmouseleave="priceOnel5() "class="secondTime">03:15 PM</div></a>
+                <a  style="text-decoration: none;" href="howManySeat.html"> <div onmouseenter="priceOne6()" onmouseleave="priceOnel6() "class="thirdTime">  09:30 PM</div></a>
+    </div>
+    
+    </div>
+    <p id="i7" style="font-weight: bold;"> <i style="color: rgb(246, 160, 12); margin-top: 20px; margin-left: 520px; padding-right: 5px; font-size: 12px;" class="fa-solid fa-circle"></i>Cancellation Available</p>
+    <div class="brandwithPrice7">
+        <div class="first1">
+         <p id="rate">RS. 150.00</p>
+         <p id="type">Premium</p>
+         <p id="status" style="color: green;">Available</p>
+        </div> 
+        <div class="second2">
+         <p id="rate">RS. 240.00</p>
+         <p id="type">Normal</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+        <div class="third3">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Executive</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+     </div>
+     <div class="brandwithPrice8">
+         <div class="first1">
+          <p id="rate">RS. 190.00</p>
+          <p id="type">Premium</p>
+          <p id="status" style="color: green;">Available</p>
+         </div> 
+         <div class="second2">
+          <p id="rate">RS. 150.00</p>
+          <p id="type">Normal</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+         <div class="third3">
+          <p id="rate">RS. 140.00</p>
+          <p id="type">Executive</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+      </div>
+      <div class="brandwithPrice9">
+         <div class="first1">
+          <p id="rate">RS. 210.00</p>
+          <p id="type">Premium</p>
+          <p id="status" style="color: green;">Available</p>
+         </div> 
+         <div class="second2">
+          <p id="rate">RS. 500.00</p>
+          <p id="type">Normal</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+         <div class="third3">
+          <p id="rate">RS. 140.00</p>
+          <p id="type">Executive</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+      </div>
+    <hr>
+   
+
+
+
+
+
+
+
+    <div style="display: flex;" id="cinemaList3">
+        <div class="cinemaname">
+            <a  style="text-decoration: none;" href="howManySeat.html"> <p style="padding: 10px; font-weight: bold; cursor: pointer;"> <i style="padding-right: 5px;" class="fa-regular fa-heart"></i> Cinepolis: Aashima Mall, Bhopal</p></a>
+            <span style="display: flex; gap: 50px;">
+              <p style="color: green; padding-left: 20px;"> <i class="fa-solid fa-mobile"></i> M-Ticket</p> 
+              <p style="color: rgb(204, 94, 20);"> <i class="fa-solid fa-plate-wheat"></i>Food & Beverage</p>
+            </span>
+        </div>
+      <div class="info">
+        <p><i style="padding-right: 5px; font-size: 15px;" class="fa-solid fa-circle-info"></i>info</p>
+    </div>
+    <div style="display: flex; gap: 10px;" class="alltime">
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div  onmouseenter="priceOne7()" onmouseleave="priceOnel7() " class="firstTime">06:20 PM</div></a>
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div  onmouseenter="priceOne8()" onmouseleave="priceOnel8() " class="secondTime">12:15 PM</div></a>
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div  onmouseenter="priceOne9()" onmouseleave="priceOnel9() " class="thirdTime">  09:30 PM</div></a>
+    </div>
+    
+    </div>
+    <p id="i6" style="font-weight: bold;"> <i style="color: rgb(246, 160, 12); margin-top: 20px; margin-left: 520px; padding-right: 5px; font-size: 12px;" class="fa-solid fa-circle"></i>Cancellation Available</p>
+
+    <div class="brandwithPrice10">
+        <div class="first1">
+         <p id="rate">RS. 150.00</p>
+         <p id="type">Premium</p>
+         <p id="status" style="color: green;">Available</p>
+        </div> 
+        <div class="second2">
+         <p id="rate">RS. 240.00</p>
+         <p id="type">Normal</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+        <div class="third3">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Executive</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+     </div>
+    
+    <hr>
+   
+
+    <div style="display: flex;" id="cinemaList9">
+        <div class="cinemaname">
+            <a  style="text-decoration: none;" href="howManySeat.html"> <p style="padding: 10px; font-weight: bold; cursor: pointer;"> <i style="padding-right: 5px;" class="fa-regular fa-heart"></i> Cinepolis: Aashima Mall, Bhopal</p></a>
+            <span style="display: flex; gap: 50px;">
+              <p style="color: green; padding-left: 20px;"> <i class="fa-solid fa-mobile"></i> M-Ticket</p> 
+              <p style="color: rgb(204, 94, 20);"> <i class="fa-solid fa-plate-wheat"></i>Food & Beverage</p>
+            </span>
+        </div>
+      <div class="info">
+        <p><i style="padding-right: 5px; font-size: 15px;" class="fa-solid fa-circle-info"></i>info</p>
+    </div>
+    <div style="display: flex; gap: 10px;" class="alltime">
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div   onmouseenter="priceOne10()" onmouseleave="priceOnel10() " class="firstTime">06:20 PM</div></a>
+        
+    </div>
+    
+    </div>
+    <p id="i5" style="font-weight: bold;"> <i style="color: rgb(246, 160, 12); margin-top: 20px; margin-left: 520px; padding-right: 5px; font-size: 12px;" class="fa-solid fa-circle"></i>Cancellation Available</p>
+    
+    <div class="brandwithPrice28">
+        <div class="first1">
+         <p id="rate">RS. 150.00</p>
+         <p id="type">Premium</p>
+         <p id="status" style="color: green;">Available</p>
+        </div> 
+        <div class="second2">
+         <p id="rate">RS. 240.00</p>
+         <p id="type">Normal</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+        <div class="third3">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Executive</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+     </div>
+     <div class="brandwithPrice29">
+         <div class="first1">
+          <p id="rate">RS. 190.00</p>
+          <p id="type">Premium</p>
+          <p id="status" style="color: green;">Available</p>
+         </div> 
+         <div class="second2">
+          <p id="rate">RS. 150.00</p>
+          <p id="type">Normal</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+         <div class="third3">
+          <p id="rate">RS. 140.00</p>
+          <p id="type">Executive</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+      </div>
+      <div class="brandwithPrice30">
+         <div class="first1">
+          <p id="rate">RS. 210.00</p>
+          <p id="type">Premium</p>
+          <p id="status" style="color: green;">Available</p>
+         </div> 
+         <div class="second2">
+          <p id="rate">RS. 500.00</p>
+          <p id="type">Normal</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+         <div class="third3">
+          <p id="rate">RS. 140.00</p>
+          <p id="type">Executive</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+      </div>
+    <hr>
+   
+
+
+
+
+
+
+    <div style="display: flex;" id="cinemaList12">
+        <div class="cinemaname">
+            <a  style="text-decoration: none;" href="howManySeat.html"> <p style="padding: 10px; font-weight: bold; cursor: pointer;"> <i style="padding-right: 5px;" class="fa-regular fa-heart"></i> Peoples Mall, Bhopal</p></a>
+            <span style="display: flex; gap: 50px;">
+              <p style="color: green; padding-left: 20px;"> <i class="fa-solid fa-mobile"></i> M-Ticket</p> 
+              <p style="color: rgb(204, 94, 20);"> <i class="fa-solid fa-plate-wheat"></i>Food & Beverage</p>
+            </span>
+        </div>
+      <div class="info">
+        <p><i style="padding-right: 5px; font-size: 15px;" class="fa-solid fa-circle-info"></i>info</p>
+    </div>
+    <div style="display: flex; gap: 10px;" class="alltime">
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div   onmouseenter="priceOne11()" onmouseleave="priceOnel11() " class="firstTime">06:20 PM</div></a>
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div   onmouseenter="priceOne12()" onmouseleave="priceOnel12() " class="secondTime">08:15 PM</div></a>
+        <a  style="text-decoration: none;" href="howManySeat.html"><div  onmouseenter="priceOne13()" onmouseleave="priceOnel13() " class="thirdTime">  09:30 PM</div></a>
+    </div>
+    
+    </div>
+    <p id="i4" style="font-weight: bold;"> <i style="color: rgb(246, 160, 12); margin-top: 20px; margin-left: 520px; padding-right: 5px; font-size: 12px;" class="fa-solid fa-circle"></i>Cancellation Available</p>
+    
+    
+    
+    
+    <div class="brandwithPrice23">
+        <div class="first1">
+         <p id="rate">RS. 150.00</p>
+         <p id="type">Premium</p>
+         <p id="status" style="color: green;">Available</p>
+        </div> 
+        <div class="second2">
+         <p id="rate">RS. 240.00</p>
+         <p id="type">Normal</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+        <div class="third3">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Executive</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+     </div>
+     <div class="brandwithPrice24">
+         <div class="first1">
+          <p id="rate">RS. 190.00</p>
+          <p id="type">Premium</p>
+          <p id="status" style="color: green;">Available</p>
+         </div> 
+         <div class="second2">
+          <p id="rate">RS. 150.00</p>
+          <p id="type">Normal</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+         <div class="third3">
+          <p id="rate">RS. 140.00</p>
+          <p id="type">Executive</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+      </div>
+      <div class="brandwithPrice25">
+         <div class="first1">
+          <p id="rate">RS. 210.00</p>
+          <p id="type">Premium</p>
+          <p id="status" style="color: green;">Available</p>
+         </div> 
+         <div class="second2">
+          <p id="rate">RS. 500.00</p>
+          <p id="type">Normal</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+         <div class="third3">
+          <p id="rate">RS. 140.00</p>
+          <p id="type">Executive</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+      </div>
+      <div class="brandwithPrice26">
+        <div class="first1">
+         <p id="rate">RS. 210.00</p>
+         <p id="type">Premium</p>
+         <p id="status" style="color: green;">Available</p>
+        </div> 
+        <div class="second2">
+         <p id="rate">RS. 500.00</p>
+         <p id="type">Normal</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+        <div class="third3">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Executive</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+     </div>
+     <div class="brandwithPrice27">
+        <div class="first1">
+         <p id="rate">RS. 210.00</p>
+         <p id="type">Premium</p>
+         <p id="status" style="color: green;">Available</p>
+        </div> 
+        <div class="second2">
+         <p id="rate">RS. 500.00</p>
+         <p id="type">Normal</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+        <div class="third3">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Executive</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+     </div>
+      
+    <hr>
+   
+
+
+
+
+
+
+
+
+
+
+    <div style="display: flex;" id="cinemaList13">
+        <div class="cinemaname">
+            <a  style="text-decoration: none;" href="howManySeat.html"> <p style="padding: 10px; font-weight: bold; cursor: pointer;"> <i style="padding-right: 5px;" class="fa-regular fa-heart"></i> PVR: Aura Mall, Bhopal</p></a>
+            <span style="display: flex; gap: 50px;">
+              <p style="color: green; padding-left: 20px;"> <i class="fa-solid fa-mobile"></i> M-Ticket</p> 
+              <p style="color: rgb(204, 94, 20);"> <i class="fa-solid fa-plate-wheat"></i>Food & Beverage</p>
+            </span>
+        </div>
+      <div class="info">
+        <p><i style="padding-right: 5px; font-size: 15px;" class="fa-solid fa-circle-info"></i>info</p>
+    </div>
+    <div style="display: flex; gap: 10px;" class="alltime">
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div onmouseenter="priceOne14()" onmouseleave="priceOnel14() " class="firstTime">10:20 AM</div></a>
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div onmouseenter="priceOne15()" onmouseleave="priceOnel15() " class="secondTime">08:15 PM</div></a>
+        <a  style="text-decoration: none;" href="howManySeat.html"><div onmouseenter="priceOne16()" onmouseleave="priceOnel16() " class="thirdTime"> 09:30 AM</div></a>
+        <a  style="text-decoration: none;" href="howManySeat.html"><div onmouseenter="priceOne17()" onmouseleave="priceOnel17() " class="fourthTime">10:30 PM</div></a>
+        <a  style="text-decoration: none;" href="howManySeat.html"><div onmouseenter="priceOne18()" onmouseleave="priceOnel18() " class="fiveTime"> 00:30 PM</div></a>
+    </div>
+    
+    </div>
+    <p id="i3" style="font-weight: bold;"> <i style="color: rgb(246, 160, 12); margin-top: 20px; margin-left: 520px; padding-right: 5px; font-size: 12px;" class="fa-solid fa-circle"></i>Cancellation Available</p>
+    
+
+
+    <div class="brandwithPrice20">
+        <div class="first1">
+         <p id="rate">RS. 150.00</p>
+         <p id="type">Premium</p>
+         <p id="status" style="color: green;">Available</p>
+        </div> 
+        <div class="second2">
+         <p id="rate">RS. 240.00</p>
+         <p id="type">Normal</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+        <div class="third3">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Executive</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+     </div>
+     <div class="brandwithPrice21">
+         <div class="first1">
+          <p id="rate">RS. 190.00</p>
+          <p id="type">Premium</p>
+          <p id="status" style="color: green;">Available</p>
+         </div> 
+         <div class="second2">
+          <p id="rate">RS. 150.00</p>
+          <p id="type">Normal</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+         <div class="third3">
+          <p id="rate">RS. 140.00</p>
+          <p id="type">Executive</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+      </div>
+      <div class="brandwithPrice22">
+         <div class="first1">
+          <p id="rate">RS. 210.00</p>
+          <p id="type">Premium</p>
+          <p id="status" style="color: green;">Available</p>
+         </div> 
+         <div class="second2">
+          <p id="rate">RS. 500.00</p>
+          <p id="type">Normal</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+         <div class="third3">
+          <p id="rate">RS. 140.00</p>
+          <p id="type">Executive</p>
+          <p id="status" style="color: green;">Available</p>
+         </div>
+      </div>
+    <hr>
+   
+
+
+
+    <div style="display: flex;" id="cinemaList14">
+        <div class="cinemaname">
+            <a  style="text-decoration: none;" href="howManySeat.html"> <p style="padding: 10px; font-weight: bold; cursor: pointer; "> <i  style="padding-right: 5px;" class="fa-regular fa-heart"></i>  DDX Cinema Kolar: Bhopal, Bhopal</p> </a>
+            <span style="display: flex; gap: 50px;">
+              <p style="color: green; padding-left: 20px;"> <i class="fa-solid fa-mobile"></i> M-Ticket</p> 
+              <p style="color: rgb(204, 94, 20);"> <i class="fa-solid fa-plate-wheat"></i>Food & Beverage</p>
+            </span>
+        </div>
+      <div class="info">
+        <p><i style="padding-right: 5px; font-size: 15px;" class="fa-solid fa-circle-info"></i>info</p>
+    </div>
+    <div style="display: flex; gap: 10px;" class="alltime">
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div onmouseenter="priceOne19()" onmouseleave="priceOnel19()" class="firstTime">03:20 PM</div></a>
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div onmouseenter="priceOne20()" onmouseleave="priceOnel20() "class="secondTime">07:15 PM</div></a>
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div onmouseenter="priceOne21()" onmouseleave="priceOnel21() "class="thirdTime">  09:30 PM</div></a>
+    </div>
+    
+    </div>
+    <p id="i2" style="font-weight: bold;"> <i style="color: rgb(246, 160, 12); margin-top: 20px; margin-left: 520px; padding-right: 5px; font-size: 12px;" class="fa-solid fa-circle"></i>Cancellation Available</p>
+    
+    
+    <div class="brandwithPrice14">
+        <div class="first1">
+         <p id="rate">RS. 150.00</p>
+         <p id="type">Premium</p>
+         <p id="status" style="color: green;">Available</p>
+        </div> 
+        <div class="second2">
+         <p id="rate">RS. 240.00</p>
+         <p id="type">Normal</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+        <div class="third3">
+         <p id="rate">RS. 140.00</p>
+         <p id="type">Executive</p>
+         <p id="status" style="color: green;">Available</p>
+        </div>
+     </div>
+    <hr>
+   
+
+
+
+
+
+
+
+
+    <div style="display: flex;" id="cinemaList15">
+        <div class="cinemaname">
+            <a  style="text-decoration: none;" href="howManySeat.html"> <p style="padding: 10px; font-weight: bold; cursor: pointer;"> <i style="padding-right: 5px;" class="fa-regular fa-heart"></i> British Park Cineplex: Bhopal</p></a>
+            <span style="display: flex; gap: 50px;">
+              <p style="color: green; padding-left: 20px;"> <i class="fa-solid fa-mobile"></i> M-Ticket</p> 
+              <p style="color: rgb(204, 94, 20);"> <i class="fa-solid fa-plate-wheat"></i>Food & Beverage</p>
+            </span>
+        </div>
+      <div class="info">
+        <p><i style="padding-right: 5px; font-size: 15px;" class="fa-solid fa-circle-info"></i>info</p>
+    </div>
+    <div style="display: flex; gap: 10px;" class="alltime">
+        <a  style="text-decoration: none;" href="howManySeat.html"> <div onmouseenter="priceOne22()" onmouseleave="priceOnel22() " class="firstTime">06:00 PM</div></a>
+    </div>
+    
+    </div>
+    <p id="i1" style="font-weight: bold;"> <i style="color: rgb(246, 160, 12); margin-top: 20px; margin-left: 520px; padding-right: 5px; font-size: 12px;" class="fa-solid fa-circle"></i>Cancellation Available</p><hr>
+   
+
+
+    
+   </section>
+
+
+
+
+    <section id="more">
+        <div onmouseleave="moreClose()" class="moreItem">
+           
+            <a href=""><i class="fa-solid fa-gift"></i> Gift card</a><br>
+            <a href=""><i class="fa-solid fa-file-contract"></i> Portal</a><br>
+            <a href=""><i class="fa-solid fa-gifts"></i> Bulk gift card</a><br>
+            <a href=""><i class="fa-brands fa-adversal"></i> Adverties</a><br>
+            <a href=""><i class="fa-solid fa-bag-shopping"></i>Merchandice</a><br>
+            <a href=""><i class="fa-brands fa-screenpal"></i> Screenit</a>
+            <hr>
+            <a href="">About</a><br>
+            <a href="">Career</a><br>
+            <a href="">Policy</a><br>
+            <a href="">Security</a><br>
+            <a href="">Help</a><br>
+            <a href="">Contact us</a><br>
+            <a href="">FAQ</a><br>
+            <a href="">News</a><br>
+            <a href="">Experience</a><br>
+            
+        </div>
+
+    </section>
+   
+       
+
+
+
+
+   
+    <slider>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="image/sld1.avif" alt=""></div>
+              <div class="swiper-slide"> <img src="image/sld2.avif" alt=""></div>
+              <div class="swiper-slide"><img src="image/sld3.avif" alt=""></div>
+              <div class="swiper-slide"><img src="image/sld4.avif" alt=""></div>
+              <div class="swiper-slide"><img src="image/slide5.avif" alt=""></div>
+              <div class="swiper-slide"><img src="image/sld6.avif" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </slider>
+    <main>
+        <a href="#nowShowing"><div class="nowsoon">Now Showing</div></a>
+        <a href="#commingSoon"><div class="commingsoon">Comming Soon</div></a>
+        <a href="#tailers"><div class="experience">Exceperience</div></a>
+        <a href="#tailers"><div class="traler">Trailers</div></a>
+        <a href="#offer"><div class="offer">Offers</div></a>
+       
+    </main>
+    <hr>
+
+
+
+
+    <Section id="nowShowing">
+            <h1>Now Showing</h1>
+            <div class="box">
+                <div  data-aos="flip-left"  data-aos-duration="2000"  class="box1">
+                    <div class="img">
+                        <img style="height: 420px; width: 320px;" src="image/mv1.avif" alt="">
+                    </div>
+                    <h5>KRAVEN THE HUNTER</h5>
+                    <p>Hindi, English</p>
+                    <p>A</p>
+                    <div class="forbook">
+                        <div onclick="bookKaro1()" class="book">Book</div>
+                        <div onclick="detailsDekho()" class="details"><i class="fa-solid fa-circle-info"></i></div>
+                    </div>
+                  
+                </div>
+                <div  data-aos="flip-left" data-aos-duration="2000" class="box2">
+                    <div class="img">
+                        <img style="height: 420px; width: 320px;" src="image/mv2.webp" alt="">
+                    </div>
+                    <h5>BABY JOHN</h5>
+                    <p>Hindi</p>
+                    <p>UA 16+</p>
+                    <div class="forbook">
+                        <div  onclick="bookKaro2()" class="book">Book</div>
+                        <div onclick="detailsDekho()" class="details"><i class="fa-solid fa-circle-info"></i></div>
+                    </div>
+                </div>
+                <div  data-aos="flip-left" data-aos-duration="2000" class="box3">
+                    <div class="img">
+                        <img style="height: 420px; width: 320px;" src="image/mv3.avif" alt="">
+                    </div>
+                    <h5>PUSHPA(THE RULE PART-0...</h5>
+                    <p>Hindi</p>
+                    <p>UA 16+</p>
+                    <div class="forbook">
+                        <div  onclick="bookKaro3()" class="book">Book</div>
+                        <div onclick="detailsDekho()" class="details"><i class="fa-solid fa-circle-info"></i></div>
+                    </div>
+                </div>
+                <div  data-aos="flip-left" data-aos-duration="2000" class="box4">
+                    <div class="img">
+                        <img style="height: 420px; width: 320px;" src="image/mv4.webp" alt="">
+                    </div>
+                    <h5 id="movieName4">MUFASA: THE LION KING</h5>
+                    <p>Hindi, English</p> 
+                    <p>U</p>
+                    <div class="forbook">
+                        <div  onclick="bookKaro4()" class="book">Book</div>
+                        <div onclick="detailsDekho()" class="details"><i class="fa-solid fa-circle-info"></i></div>
+                    </div>
+                </div>
+              
+            </div>
+          
+    </Section>
+
+    <section id="commingSoon">
+        <h1>Comming Soon</h1>
+        <div class="box">
+            <div data-aos="zoom-in-down"  data-aos-offset="300" class="box1">
+                <div class="img">
+                    <img style="height: 420px; width: 250px;" src="image/mv21.jpg" alt="">
+                </div>
+                <h5>KRAVEN THE HUNTER</h5>
+                <p>Hindi, English</p>
+                <p>A</p>
+                <h4>Releasing on Tue Dec 31</h4>
+                <div class="forbook">
+                    <div onclick="detailsDekho()" style="cursor: pointer;" class="book">View Details</div>
+                    <div  class="details"><i class="fa-regular fa-bell"></i></div>
+                </div>
+              
+            </div>
+            <div data-aos="zoom-in-down" data-aos-offset="300" class="box2">
+                <div class="img">
+                    <img style="height: 420px; width: 250px;" src="image/mv22.webp" alt="">
+                </div>
+                <h5>BABY JOHN</h5>
+                <p>Hindi</p>
+                <p>UA 16+</p>
+                <h4>Releasing on Tue Dec 31</h4>
+                <div class="forbook">
+                    <div onclick="detailsDekho()" style="cursor: pointer;" class="book">View Details</div>
+                    <div  class="details"><i class="fa-regular fa-bell"></i></div>
+                </div>
+            </div>
+            <div  data-aos="zoom-in-down"  data-aos-offset="300" class="box3">
+                <div class="img">
+                    <img style="height: 420px; width: 250px;" src="image/mv23.avif" alt="">
+                </div>
+                <h5>PUSHPA(THE RULE PART-0...</h5>
+                <p>Hindi</p>
+                <p>UA 16+</p>
+                <h4>Releasing on Fri Jan 03</h4>
+                <div class="forbook">
+                    <div  onclick="detailsDekho()" style="cursor: pointer;" class="book">View Details</div>
+                    <div class="details"><i class="fa-regular fa-bell"></i></div>
+                </div>
+            </div>
+            <div  data-aos="zoom-in-down"  data-aos-offset="300" class="box4">
+                <div class="img">
+                    <img style="height: 420px; width: 250px;" src="image/mv24.avif" alt="">
+                </div>
+                <h5>MUFASA: THE LION KING</h5>
+                <p>Hindi, English</p>
+                <p>U</p>
+                <h4>Releasing on Tue Dec 31</h4>
+                <div class="forbook">
+                    <div onclick="detailsDekho()" style="cursor: pointer;" class="book">View Details</div>
+                    <div class="details"><i class="fa-regular fa-bell"></i></div>
+                </div>
+            </div>
+            <div  data-aos="zoom-in-down"  data-aos-offset="300" class="box5">
+                <div class="img">
+                    <img style="height: 420px; width: 250px;" src="image/mv25.avif" alt="">
+                </div>
+                <h5>MUFASA: THE LION KING</h5>
+                <p>Hindi, English</p>
+                <p>U</p>
+                <h4>Releasing on Fri Jan 03</h4>
+                <div class="forbook">
+                    <div  onclick="detailsDekho()" style="cursor: pointer;" class="book">View Details</div>
+                    <div class="details"><i class="fa-regular fa-bell"></i></div>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    <section id="tailers">
+      <h1>Tailers</h1>
+      <div  data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000" class="mainbox">
+       
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img style="height: 600px; width: 100%; background-size: contain;" src="image/mv1.avif" />
+              </div>
+              <div class="swiper-slide">
+                <img style="height: 600px; width: 100%; background-size: contain;" src="image/mv2.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img style="height: 600px; width: 100%; background-size: contain;" src="image/mv3.avif" />
+              </div>
+              <div class="swiper-slide">
+                <img style="height: 600px; width: 100%; background-size: contain;" src="image/mv4.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img style="height: 600px; width: 100%; background-size: contain;" src="image/mv21.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img style="height: 600px; width: 100%; background-size: contain;" src="image/mv22.webp" />
+              </div>
+              <div class="swiper-slide">
+                <img style="height: 600px; width: 100%; background-size: contain;" src="image/mv23.avif" />
+              </div>
+              <div class="swiper-slide">
+                <img style="height: 600px; width: 100%; background-size: contain;" src="image/mv24.avif" />
+              </div>
+              <div class="swiper-slide">
+                <img style="height: 600px; width: 100%; background-size: contain;" src="image/mv25.avif" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img style="height: 100%; width: 100%; background-size: contain;" src="image/mv1.avif" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="height: 100%; width: 100%; background-size: contain;" src="image/mv2.webp" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="height: 100%; width: 100%; background-size: contain;" src="image/mv3.avif" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="height: 100%; width: 100%; background-size: contain;" src="image/mv4.webp" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="height: 100%; width: 100%; background-size: contain;" src="image/mv21.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="height: 100%; width: 100%; background-size: contain;" src="image/mv22.webp" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="height: 100%; width: 100%; background-size: contain;" src="image/mv23.avif" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="height: 100%; width: 100%; background-size: contain;" src="image/mv24.avif" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="height: 100%; width: 100%; background-size: contain;" src="image/mv25.avif" />
+                  </div>
+            </div>
+          </div>
+
+      </div>
+    
+    </section>
+
+    <section id="offer">
+        <h1>Offer For You</h1>
+
+        <div class="box">
+            <div  data-aos="zoom-in-down"  data-aos-offset="300" class="box1">
+                <div class="img">
+                    <img style="height: 200px; width: 300px; border-radius: 10px;" src="image/ofr4.webp" alt="">
+                </div>
+               <h5>Standard Chartered Bank – Buy One Get One</h5>
+              <p>Valid till: Mon, Mar 31, 2025</p>
+              <div class="view">View</div>
+               
+              
+            </div>
+            <div  data-aos="zoom-in-down"  data-aos-offset="300" class="box2">
+                <div class="img">
+                    <img style="height: 200px; width: 300px;border-radius: 10px;" src="image/ofr3.webp" alt="">
+                </div>
+                <h5>BOBCARD up to 25 % off* on Movie Ticket</h5>
+                <p>Valid till: Mon, Mar 31, 2025</p>
+                <div class="view">View</div>
+            </div>
+            <div  data-aos="zoom-in-down"  data-aos-offset="300" class="box3">
+                <div class="img">
+                    <img style="height: 200px; width: 300px; border-radius: 10px;" src="image/ofr2.webp" alt="">
+                </div>
+                <h5>BOBCARD up to 10 % off* on F&B</h5>
+                <p>Valid till: Mon, Mar 31, 2025</p>
+                <div class="view">View</div>
+            </div>
+            <div  data-aos="zoom-in-down"  data-aos-offset="300" class="box4">
+                <div class="img">
+                    <img style="height: 200px; width: 300px; border-radius: 10px;" src="image/ofr1.avif" alt="">
+                </div>
+                <h5>IDBI Bank - 25% Off on Transactions</h5>
+                <p>Valid till: Mon, Mar 31, 2025</p>
+                <div class="view">View</div>
+            </div>
+          
+        </div>
+
+    </section>
+
+
+  
+
+    <footer>
+        <div class="left">
+            <a href="https://seal.panaceainfosec.com/index.php?certid=CERT9EE7E85FBE"> <img src="image/foot1.png" alt=""></a>
+           <a href="https://in.norton.com/?form_file=fdf/splash.fdf&dn=www.pvrcinemas.com&lang=en"><img src="image/foot2.png" alt=""></a>
+            
+            <p>© 2024 All rights reserved</p>
+        </div>
+        <div class="middle">
+            <div class="social">
+                <a href="https://www.instagram.com/umesh01910/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/umeshkumaryadav.yadav.18659"> <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/umesh-yadav-60b617229/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/umesh-yadav-60b617229/"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+           
+        </div>
+        <div class="right">
+            <a href="https://play.google.com/store/apps/details?id=com.bt.inx"> <img style="height: 50px; width: 150px;" src="image/playstor.png " alt=""></a>
+            <a  href="https://apps.apple.com/in/app/inox/id474776230"> <img style="height: 50px; width: 150px;" src="image/appstr.jpg" alt=""></a>
+          <div class="rule">
+            <a href="https://www.inoxmovies.com/privacy-policy"><p>Privacy Policy</p></a>
+           <a href="https://www.inoxmovies.com/terms-conditions/booking"> <p>Terms & Conditions</p></a>
+           <a href="https://www.inoxmovies.com/terms-use"> <p>Terms of Use</p></a>
+          </div>
+           
+        </div>
+        
+    </footer>
+
+
+   
+      
+
+
+    <!-- <div style="width: 100%; height: 500px;" id="van"></div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="style.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="new.js"></script>
+    <!-- <script src="vanta.js"></script> -->
+   
+    <script>
+        AOS.init();
+      </script>
+ 
+</body>
+</html>

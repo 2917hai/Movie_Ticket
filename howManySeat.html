@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="image/bookkaroLogo.webp">
+</head>
+<body>
+    <section style="background-image: url(image/mv2.webp);  " id="howmanySeat">
+      
+        <div class="mainbox" >
+            <h1>How many Seat you want to book</h1>
+            <div class="imagebox">
+                <img id="img1" style="height: 200px; width: 300px; background-color: transparent; margin-left: 200px; display: block;" src="image/im1.jpg" alt="">
+                <img id="img2" style="height: 200px; width: 300px; background-color: transparent; margin-left: 200px;  display: none;" src="image/im2.jpg" alt="">
+                <img id="img3" style="height: 200px; width: 300px; background-color: transparent; margin-left: 200px;  display: none;" src="image/im3.jpg" alt="">
+                <img id="img4" style="height: 200px; width: 300px; background-color: transparent; margin-left: 200px;  display: none;" src="image/im4.jpg" alt="">
+                <img id="img5" style="height: 200px; width: 300px; background-color: transparent; margin-left: 200px;  display: none;" src="image/im5.jpg" alt="">
+                <img id="img6" style="height: 200px; width: 300px; background-color: transparent; margin-left: 200px;  display: none;" src="image/im6.jpg" alt="">
+                <img id="img7" style="height: 200px; width: 300px; background-color: transparent; margin-left: 200px;  display: none;" src="image/im7.jpg" alt="">
+                <img id="img8" style="height: 200px; width: 300px; background-color: transparent; margin-left: 200px;  display: none;" src="image/im8.jpg" alt="">
+                <img id="img9" style="height: 200px; width: 300px; background-color: transparent; margin-left: 200px;  display: none;" src="image/im9.jpg" alt="">
+                <img id="img10" style="height: 200px; width: 300px; background-color: transparent; margin-left: 200px;  display:none ;" src="image/im10.jpg" alt="">
+            </div>
+            <div class="numberbox">
+                <div id="ticket1" onclick="ticket1()" style="height: 30px; width: 30px; padding-left: 10px; padding-top: 5px; font-weight: bold; font-size: 20px; background-color: rgb(254, 253, 253); border-radius: 50%;" class="no1">1</div>
+                <div id="ticket2" onclick="ticket2()"  style="height: 30px; width: 30px; padding-left: 10px; padding-top: 5px; font-weight: bold; font-size: 20px; background-color: rgb(247, 243, 243); border-radius: 50%;" class="no2">2</div>
+                <div id="ticket3" onclick="ticket3()"  style="height: 30px; width: 30px; padding-left: 10px; padding-top: 5px; font-weight: bold; font-size: 20px; background-color: rgb(244, 241, 241); border-radius: 50%;" class="no3">3</div>
+                <div id="ticket4" onclick="ticket4()"style="height: 30px; width: 30px; padding-left: 10px; padding-top: 5px; font-weight: bold; font-size: 20px; background-color: rgb(253, 247, 247); border-radius: 50%;" class="no4">4</div>
+                <div id="ticket5" onclick="ticket5()" style="height: 30px; width: 30px; padding-left: 10px; padding-top: 5px; font-weight: bold; font-size: 20px; background-color: rgb(248, 245, 245); border-radius: 50%;" class="no5">5</div>
+                <div id="ticket6" onclick="ticket6()"  style="height: 30px; width: 30px; padding-left: 10px; padding-top: 5px; font-weight: bold; font-size: 20px; background-color: rgb(251, 248, 248); border-radius: 50%;" class="no6">6</div>
+                <div id="ticket7" onclick="ticket7()" style="height: 30px; width: 30px; padding-left: 10px; padding-top: 5px; font-weight: bold; font-size: 20px; background-color: rgb(248, 245, 245); border-radius: 50%;" class="no7">7</div>
+                <div id="ticket8" onclick="ticket8()" style="height: 30px; width: 30px; padding-left: 10px; padding-top: 5px; font-weight: bold; font-size: 20px; background-color: rgb(255, 252, 252); border-radius: 50%;" class="no8">8</div>
+                <di  id="ticket9" onclick="ticket9()"  style="height: 30px; width: 30px; padding-left: 10px; padding-top: 5px; font-weight: bold; font-size: 20px; background-color: rgb(251, 247, 247); border-radius: 50%;" class="no9">9</di>
+                <div id="ticket10" onclick="ticket10()"style="height: 30px; width: 40px; padding-left: 10px; padding-top: 5px; font-weight: bold; font-size: 20px; background-color: rgb(252, 249, 249); border-radius: 50%;" class="no10">10</div>
+            </div>
+            <div class="totalprice">Total Price Rs : <h5 id="totalpaisa" style="font-weight: bolder; font-size: 18px;"> 0.00</h5></div>
+            <div onclick="collectSeat()" class="selectseat">Select seat</div>
+        </div>
+    </section>
+
+    <section id="movieRoom">
+        <nav id="nav1">
+            <div class="box1">
+                <h1></h1>
+                <h1></h1>
+            </div>
+            <div class="box2">
+                <div  class="seatNumber" style="display: flex; gap: 5px;">
+                
+                        <p id="seatno">0</p> 
+                        <h5>Tickets</h5>
+                    
+                   
+                    <div id="edit"><i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                </div>
+                <a href="Index.html"><div onclick="seatPageClose()" class="dltPage"><i class="fa-regular fa-circle-xmark"></i></div></a>
+            </div>
+          
+        </nav>
+        <nav id="nav2">
+            <div  class="firstTime">10:20 AM</div>
+            <div  class="secondTime">08:15 PM</div>
+            <div class="thirdTime"> 09:30 AM</div>
+            <div class="fourthTime">10:30 PM</div>
+            <div class="fiveTime"> 00:30 PM</div>
+        </nav>
+
+        <div id="TicketmainBox">
+            <div class="remainingSeat">
+                <p id="remain">100</p>
+                <h5>Remaining Seat</h5>
+            </div>
+            <div class="ticketBox1">
+                <!-- <h1>Rs. 450-500 Premium</h1> -->
+                <div class="seatBox">
+                   <div onclick="multiTicket()" style="padding-left: 20px;" class="tkt1">1</div>
+                   <div onclick="multiTicket()" class="tkt2">2</div>
+                   <div onclick="multiTicket()"class="tkt3">3</div>
+                   <div  onclick="multiTicket()"class="tkt4">4</div>
+                   <div onclick="multiTicket()" class="tkt5">5</div>
+                   <div onclick="multiTicket()" class="tkt6">6</div>
+                   <div onclick="multiTicket()" class="tkt7">7</div>
+                   <div onclick="multiTicket()" class="tkt8">8</div>
+                   <div onclick="multiTicket()" class="tkt9">9</div>
+                   <div onclick="multiTicket()" class="tkt10">10</div>
+                   <div onclick="multiTicket()" class="tkt11">11</div>
+                   <div onclick="multiTicket()"class="tkt12">12</div>
+                   <div onclick="multiTicket()"class="tkt13">13</div>
+                   <div onclick="multiTicket()"class="tkt14">14</div>
+                   <div onclick="multiTicket()"class="tkt15">15</div>
+                   <div onclick="multiTicket()"class="tkt16">16</div>
+                   <div onclick="multiTicket()"class="tkt17">17</div>
+                   <div onclick="multiTicket()"class="tkt18">18</div>
+                   <div onclick="multiTicket()"class="tkt19">19</div>
+                   <div onclick="multiTicket()"class="tkt20">20</div>
+                </div>
+            </div><hr>
+            <div style="margin-top: 30px;" class="ticketBox2">
+                <!-- <h1>Rs. 250-300 Diamond</h1> -->
+              
+                    <div class="seatBox">
+                        <div onclick="multiTicket()"style="padding-left: 20px;" class="tkt21">21</div>
+                        <div onclick="multiTicket()"class="tkt22">22</div>
+                        <div onclick="multiTicket()"class="tkt23">23</div>
+                        <div onclick="multiTicket()"class="tkt24">24</div>
+                        <div onclick="multiTicket()"class="tkt25">25</div>
+                        <div onclick="multiTicket()"class="tkt26">26</div>
+                        <div onclick="multiTicket()"class="tkt27">27</div>
+                        <div onclick="multiTicket()"class="tkt28">28</div>
+                        <div onclick="multiTicket()"class="tkt29">29</div>
+                        <div onclick="multiTicket()"class="tkt30">30</div>
+                        <div onclick="multiTicket()" class="tkt31">31</div>
+                        <div onclick="multiTicket()"class="tkt32">32</div>
+                        <div onclick="multiTicket()"class="tkt33">33</div>
+                        <div onclick="multiTicket()"class="tkt34">34</div>
+                        <div onclick="multiTicket()"class="tkt35">35</div>
+                        <div onclick="multiTicket()"class="tkt36">36</div>
+                        <div onclick="multiTicket()"class="tkt37">37</div>
+                        <div onclick="multiTicket()"class="tkt38">38</div>
+                        <div onclick="multiTicket()"class="tkt39">39</div>
+                        <div onclick="multiTicket()"class="tkt40">40</div>
+                        <div onclick="multiTicket()"style="padding-left: 20px;" class="tkt41">41</div>
+                        <div onclick="multiTicket()"class="tkt42">42</div>
+                        <div onclick="multiTicket()"class="tkt43">43</div>
+                        <div onclick="multiTicket()"class="tkt44">44</div>
+                        <div onclick="multiTicket()"class="tkt45">45</div>
+                        <div onclick="multiTicket()"class="tkt46">46</div>
+                        <div onclick="multiTicket()"class="tkt47">47</div>
+                        <div onclick="multiTicket()"class="tkt48">48</div>
+                        <div onclick="multiTicket()"class="tkt49">49</div>
+                        <div  onclick="multiTicket()"class="tkt50">50</div>
+                        <div  onclick="multiTicket()"class="tkt51">51</div>
+                        <div onclick="multiTicket()" class="tkt52">52</div>
+                        <div onclick="multiTicket()" class="tkt53">53</div>
+                        <div onclick="multiTicket()" class="tkt54">54</div>
+                        <div onclick="multiTicket()" class="tkt55">55</div>
+                        <div onclick="multiTicket()" class="tkt56">56</div>
+                        <div  onclick="multiTicket()"class="tkt57">57</div>
+                        <div onclick="multiTicket()" class="tkt58">58</div>
+                        <div onclick="multiTicket()" class="tkt59">59</div>
+                        <div onclick="multiTicket()" class="tkt60">60</div>
+                     </div>
+                    
+               
+            </div><hr>
+         
+            <div class="ticketBox4">
+                <!-- <h1>Rs. 150-200 Lowwer</h1> -->
+                <div style="margin-top: 30px;" class="seatBox">
+                    <div onclick="multiTicket()" style="padding-left: 20px;" class="tkt61">61</div>
+                    <div onclick="multiTicket()" class="tkt62">62</div>
+                    <div onclick="multiTicket()" class="tkt63">63</div>
+                    <div onclick="multiTicket()" class="tkt64">64</div>
+                    <div onclick="multiTicket()" class="tkt65">65</div>
+                    <div onclick="multiTicket()" class="tkt66">66</div>
+                    <div onclick="multiTicket()" class="tkt67">67</div>
+                    <div onclick="multiTicket()" class="tkt68">68</div>
+                    <div onclick="multiTicket()" class="tkt69">69</div>
+                    <div onclick="multiTicket()" class="tkt70">70</div>
+                    <div onclick="multiTicket()" class="tkt71">71</div>
+                    <div onclick="multiTicket()" class="tkt72">72</div>
+                    <div onclick="multiTicket()" class="tkt73">73</div>
+                    <div onclick="multiTicket()" class="tkt74">74</div>
+                    <div onclick="multiTicket()" class="tkt75">75</div>
+                    <div onclick="multiTicket()" class="tkt76">76</div>
+                    <div onclick="multiTicket()" class="tkt77">77</div>
+                    <div onclick="multiTicket()" class="tkt78">78</div>
+                    <div onclick="multiTicket()" class="tkt79">79</div>
+                    <div onclick="multiTicket()" class="tkt80">80</div>
+                    <div onclick="multiTicket()" style="padding-left: 20px;" class="tkt81">81</div>
+                    <div onclick="multiTicket()" class="tkt82">82</div>
+                    <div onclick="multiTicket()" class="tkt83">83</div>
+                    <div onclick="multiTicket()" class="tkt84">84</div>
+                    <div onclick="multiTicket()" class="tkt85">85</div>
+                    <div onclick="multiTicket()" class="tkt86">86</div>
+                    <div onclick="multiTicket()" class="tkt87">87</div>
+                    <div onclick="multiTicket()" class="tkt88">88</div>
+                    <div onclick="multiTicket()" class="tkt89">89</div>
+                    <div onclick="multiTicket()" class="tkt90">90</div>
+                    <div onclick="multiTicket()" class="tkt91">91</div>
+                    <div onclick="multiTicket()" class="tkt92">92</div>
+                    <div onclick="multiTicket()" class="tkt93">93</div>
+                    <div onclick="multiTicket()" class="tkt94">94</div>
+                    <div onclick="multiTicket()" class="tkt95">95</div>
+                    <div onclick="multiTicket()" class="tkt96">96</div>
+                    <div onclick="multiTicket()" class="tkt97">97</div>
+                    <div onclick="multiTicket()" class="tkt98">98</div>
+                    <div onclick="multiTicket()" class="tkt99">99</div>
+                    <div onclick="multiTicket()" class="tkt100">100</div>
+                  
+                </div>
+            </div>
+            <div class="ticketBox5">
+                <h1 style="text-align: center; color: black; opacity: 100%;">All eyes this way please!</h1>
+                <span  style="display: flex; gap: 10px; justify-content: center;">
+                    <div style="height: 20px; width: 30px; border-radius: 2px; margin-left: 10px; padding-bottom: 10px; border: 1px solid green;" class="hint1"></div>
+                    <div  style="height: 20px; background-color: green; width: 30px; border-radius: 2px; margin-left: 10px; padding-bottom: 10px; border: 1px solid green;" class="hint2"></div>
+                    <div  style="height: 20px; width: 30px; background-color: rgb(222, 229, 229); border-radius: 2px; margin-left: 10px; padding-bottom: 10px; border: 1px solid green;" class="hint3"></div>
+    
+                </span>
+            
+            </div>
+            <div  onclick="formOpen()" class="submit">Book Now</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section  id="bookingform1">
+        <section  id="bookingform">
+       <a id="indexpage" href="Index.html"></a>
+       
+            <form action="">
+                <h1>Fill your details</h1>
+               <a href="Index.html"> <i style="font-size: 35px; float: right; margin-right: 50px; margin-top: -35px;" class="fa-regular fa-circle-xmark"></i></a>
+            <div class="data">
+                <p id="error" style="text-align: center; font-size: 20px; font-weight: bold; padding-top: 20px;"></p>
+                <span style="display: flex; padding-top:50px ;"> <h4> Enter Your Name :</h4> <input  style="margin-left: 60px;" id="name" type="text" style="margin-top: 15px;" placeholder="Enter your Name"></span>
+                <span style="display: flex;"> <h4> Enter Mobile NO :</h4> <input style="margin-left: 60px;"  id="mobno" type="text" placeholder="Enter your Mobile No"></span>
+                <span style="display: flex;"> <h4> Enter Email :</h4> <input style="margin-left: 115px;" id="email" type="email" placeholder="Enter your Email id"></span>
+                <span style="display: flex;"> <h4> Enter Your  Age :</h4> <input  style="margin-left: 80px;" id="age" type="number" placeholder="Enter your Age"></span>
+                <span style="display: flex;"> <h4> Enter Your Address :</h4> <input  style="margin-left: 35px;"  id="add" type="text" placeholder="Enter your Address"></span>
+                <span style="display: flex; "> <h4> Enter Date :</h4> <input id="date" style="margin-left: 130px;" type="date" placeholder="Enter Date"></span>
+                <span style="display: flex;"> <h4> Enter Your City :</h4> <input  style="margin-left: 80px;" id="city" type="text" placeholder="Enter your City"></span>
+                <span style="display: flex;"> <h4> Enter Your DOB :</h4> <input  style="margin-left: 70px;" id="dob" type="date" placeholder="Enter your DOB"></span>
+                <span style="display: flex; padding-bottom: 25px;"> <p style="color: white; font-size: 30px; font-weight: bold; padding-top: 20px; padding-left: 70px;">No Of Seat Book :=   <h2 id="noOfSeat"></h2> </p></span> 
+                <span style="display: flex;"><p  style="color: white; font-size: 30px; font-weight: bold; padding-top: 10px; padding-left: 70px;">Total Amount :=     RS-<h2 style="margin-top: -10px;" id="totalAmount">1</h2></p> </span> 
+                <input style="margin-left: 200px; font-size: 20px; margin-top: 40px; background-color: blue; color: white; font-weight: bold;" type="submit" onclick="return ins()" id="submit"  value="Book Now"> 
+            </div>
+            </form>
+        </section>
+    </section>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="new.js"></script> 
+    <script src="vanta.js"></script> 
+    <script src="movie.js"></script>
+</body>
+</html>

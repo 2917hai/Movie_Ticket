@@ -1,0 +1,931 @@
+@media (max-width:480px)
+{
+    header nav
+    {
+        width: 480px;
+    }
+    header nav .home
+    {
+        background-color: rgb(241, 241, 247);
+       border-radius: 50px;
+       padding: 2px;
+       width: 80px;
+       font-size: 15px;
+       margin-top: 5px;
+      
+    } 
+    header nav .showTime{
+        display: none;
+    }
+    header nav .cinema{
+        display: none;
+    }
+    header nav .offer{
+        display: none;
+    }
+    header nav .movie{
+        display: none;
+    }
+    header nav .threatres{
+        display: none;
+    }
+    header nav .bar{
+        display: none;
+    }
+    header nav .ticket{
+      margin-left: -90px;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+    header nav .search{
+        display: none;
+    }
+    header nav .location{
+       display: none;
+    }
+    header nav .login{
+        margin-left: 60px;
+        margin-top: 10px;
+
+    }
+    header nav #log{
+        margin-left: -20px;
+        margin-top: 10px;
+    }
+    .swiper {
+        width: 100%;
+        height: 200px;
+      }
+
+
+      main a
+      {
+       
+        font-size: 15px;
+        color: black;
+        padding: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        font-style: unset;
+      }
+      main a .experience
+      {
+        display: none;
+      }
+      #nowShowing
+      {
+        height: 2300px;
+      }
+      #nowShowing h1
+      {
+        margin-left: 10px;
+      }
+      #nowShowing .box
+      {
+        margin-left: 80px;
+        width: 450px;
+      }
+   
+
+
+
+
+       #commingSoon
+       {
+        height: 2900px;
+        
+       }
+       #commingSoon h1
+  {
+   
+    margin-left: 10px;
+   
+  }
+  #commingSoon .box
+  {
+   
+    margin-left:120px;
+  
+  }
+
+  #tailers h1
+  {
+    margin-left: 10px;
+  }
+  #tailers .mainbox
+  {
+    height: 620px;
+    width: 400px;
+    margin-left: 50px;
+    /* background-color: red; */
+    border: 25px solid rgb(198, 232, 246);
+  }
+  #offer
+  {
+    height: 1500px;
+    width: 450;
+  
+  }
+  #offer h1
+  {
+    margin-left: 10px;
+    width: 300px;
+    
+  }
+  #offer  .box
+  {
+    margin-top: 10px;
+  }
+  #offer  .box
+  {
+   
+    margin-left:80px;
+  }
+  footer
+  {
+    height: 200px;
+  }
+  .left
+  {
+    width: 200px;
+  }
+  .left img
+  {
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 20px;
+   
+  }
+  .right .rule
+  {
+    display: flex;
+    gap: 10px;
+    margin-left: -200px;
+    width: 100px;
+  }
+  .left p
+  {
+   
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 10px;
+    
+  }
+  .middle
+  {
+    height: 100%;
+    width: 50px;
+  }
+  .middle .social
+  {
+    margin-top: 30px;
+    margin-left: -70px;
+  }
+  .middle a
+  {
+    padding: 5px;
+    font-size: 10px;
+   color: whitesmoke;
+  }
+  .right
+  {
+    height: 100%;
+    width: 100px;
+    
+   
+  }
+  .right img
+  {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 20px;
+  }
+  .right .rule
+  {
+    display: flex;
+    gap: 10px;
+    width: 450px;
+    padding-left: 100px;
+   
+  }
+  .right .rule p
+  {
+
+    opacity: 50%;
+    margin-top: 30px;
+    color: white;
+    font-size: 10px;
+  }
+  #login
+  {
+    height: 500px;
+    width: 400px;
+    top: 60px;
+    left: 35px;
+
+  }
+  #login h2
+  {
+    font-size: 25px;
+  }
+  #login p
+  {
+    font-size: 20px;
+    padding-top: 30px;
+  } 
+  #login input
+  {
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+    width: 200px;
+  }
+  button
+  {
+    height: 50px;
+    width: 180px;
+    margin-top: 50px;
+    font-size: 25px;
+    margin-left: 120px;
+  }
+
+  #Register
+ {
+    height: 500px;
+    width: 400px;
+    top: 60px;
+    left: 35px;
+ }
+ #Register h2
+ {
+   font-size: 25px;
+ }
+ #Register p
+ {
+    font-size: 20px;
+    padding-top: 30px;
+ }
+ #Register input
+ {
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px;
+    width: 200px;
+ }
+ button
+ {
+    height: 50px;
+    width: 180px;
+    margin-top: 50px;
+    font-size: 25px;
+    margin-left: 120px;
+ }
+ #Register #nahi
+ {
+   margin-top: 20px;
+ }
+ 
+ #details
+ {
+   height: 5500px;
+   width: 480px;
+ }
+ #details h1
+{
+  padding: 20px;
+  font-size: 15px;
+}
+#details #time
+{
+  padding-left: 20px;
+  font-weight: bold;
+}
+#details h5
+{
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+#details h2
+{
+  padding-left: 20px;
+  font-size: 25px;
+}
+#details #synp
+{
+  padding-left: 25px;
+  padding-bottom: 20px;
+  width: 450px;
+}
+#details .close
+{
+ height: 25px;
+ width: 50px;
+ font-size: 15px;
+ margin-right: 50px;
+ margin-top: -40px;
+}
+#details .cast
+{
+  height: 900px;
+  width: 480px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: rgb(212, 229, 249);
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3,1fr);
+}
+#details .crew
+{
+  width: 480px;
+}
+#details .backdrops
+{
+  height: 1000px;
+  width: 480px;
+  margin-left: 80px;
+  gap: 20px;
+  grid-template-columns: repeat(1,1fr);
+}
+#details .backdrops .back3
+{
+    display: none;
+}
+#details .backdrops .back7
+{
+    display: none;
+}
+#details .backdrops .back4
+{
+    display: none;
+}
+
+#details .showing
+{
+  margin-left: 50px;
+  margin-top: 0px;
+  background-color: rgb(212, 229, 249);
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+#bookKaro .nav2
+{
+  height: 70px;
+  width: 450px;
+ 
+  display: flex;
+  gap: 10px;
+}
+#bookKaro .brandwithPrice1
+{
+  height: 50Px;
+  display: flex;
+  width: 200px;
+  border-radius: 20px;
+  position: absolute;
+  left: 270px;
+  margin-bottom: 10px;
+  background-color: rgb(116, 238, 183);
+  opacity:0;
+}
+#bookKaro #cinemaList1  .alltime .firstTime
+{
+  padding: 10px 10px;
+  margin-left: -110px;
+  font-size: 10px;
+  width: 70px;
+
+}
+#bookKaro #cinemaList1  .alltime .secondTime
+{
+  padding: 10px 10px;
+  margin-left: -40px;
+  font-size: 10px;
+  width: 70px;
+  
+}
+
+#bookKaro #cinemaList1  .alltime .thirdTime
+{
+  padding: 10px 10px;
+  margin-left: 0px;
+  font-size: 10px;
+  width: 70px;
+}
+
+
+
+#bookKaro #cinemaList2  .alltime .firstTime
+{
+  padding: 10px 10px;
+  margin-left: -110px;
+  font-size: 10px;
+  width: 70px;
+
+}
+#bookKaro #cinemaList2  .alltime .secondTime
+{
+  padding: 10px 10px;
+  margin-left: -40px;
+  font-size: 10px;
+  width: 70px;
+  
+}
+
+#bookKaro #cinemaList2  .alltime .thirdTime
+{
+  padding: 10px 10px;
+  margin-left: 0px;
+  font-size: 10px;
+  width: 70px;
+}
+
+#bookKaro #cinemaList3  .alltime .firstTime
+{
+  padding: 10px 10px;
+  margin-left: -110px;
+  font-size: 10px;
+  width: 70px;
+
+}
+#bookKaro #cinemaList3  .alltime .secondTime
+{
+  padding: 10px 10px;
+  margin-left: -40px;
+  font-size: 10px;
+  width: 70px;
+  
+}
+
+#bookKaro #cinemaList3  .alltime .thirdTime
+{
+  padding: 10px 10px;
+  margin-left: 0px;
+  font-size: 10px;
+  width: 70px;
+}
+
+
+#bookKaro #cinemaList9  .alltime .firstTime
+{
+  padding: 10px 10px;
+  margin-left: -110px;
+  font-size: 10px;
+  width: 70px;
+
+}
+
+
+#bookKaro #cinemaList12  .alltime .firstTime
+{
+  padding: 10px 10px;
+  margin-left: -110px;
+  font-size: 10px;
+  width: 70px;
+
+}
+#bookKaro #cinemaList12  .alltime .secondTime
+{
+  padding: 10px 10px;
+  margin-left: -40px;
+  font-size: 10px;
+  width: 70px;
+  
+}
+
+#bookKaro #cinemaList12  .alltime .thirdTime
+{
+  padding: 10px 10px;
+  margin-left: 0px;
+  font-size: 10px;
+  width: 70px;
+}
+
+#bookKaro #cinemaList13  .alltime .firstTime
+{
+  padding: 10px 10px;
+  margin-left: -110px;
+  font-size: 10px;
+  width: 70px;
+
+}
+#bookKaro #cinemaList13  .alltime .secondTime
+{
+  padding: 10px 10px;
+  margin-left: -40px;
+  font-size: 10px;
+  width: 70px;
+  
+}
+
+#bookKaro #cinemaList13  .alltime .thirdTime
+{
+  padding: 10px 10px;
+  margin-left: 0px;
+  font-size: 10px;
+  width: 70px;
+}
+#bookKaro #cinemaList13  .alltime .fourthTime
+{
+ display: none;
+}
+#bookKaro #cinemaList13  .alltime .fiveTime
+{
+  display: none;
+  
+}
+
+#bookKaro #cinemaList14  .alltime .firstTime
+{
+  padding: 10px 10px;
+  margin-left: -110px;
+  font-size: 10px;
+  width: 70px;
+
+}
+#bookKaro #cinemaList14  .alltime .secondTime
+{
+  padding: 10px 10px;
+  margin-left: -40px;
+  font-size: 10px;
+  width: 70px;
+  
+}
+
+#bookKaro #cinemaList14  .alltime .thirdTime
+{
+  padding: 10px 10px;
+  margin-left: 0px;
+  font-size: 10px;
+  width: 70px;
+}
+#bookKaro #cinemaList15  .alltime .firstTime
+{
+  padding: 10px 10px;
+  margin-left: -110px;
+  font-size: 10px;
+  width: 70px;
+
+}
+#bookKaro .brandwithPrice1
+{
+    display: none;
+}
+#bookKaro .brandwithPrice2
+{
+    display: none;
+}
+#bookKaro .brandwithPrice3
+{
+    display: none;
+}
+#bookKaro .brandwithPrice4
+{
+    display: none;
+}
+#bookKaro .brandwithPrice5
+{
+    display: none;
+}
+#bookKaro .brandwithPrice6
+{
+    display: none;
+}
+#bookKaro .brandwithPrice7
+{
+    display: none;
+}
+#bookKaro .brandwithPrice8
+{
+    display: none;
+}
+#bookKaro .brandwithPrice9
+{
+    display: none;
+}
+#bookKaro .brandwithPrice10
+{
+    display: none;
+}
+#bookKaro .brandwithPrice30
+{
+    display: none;
+}
+#bookKaro .brandwithPrice14
+{
+    display: none;
+}
+#bookKaro .brandwithPrice20
+{
+    display: none;
+}
+#bookKaro .brandwithPrice21
+{
+    display: none;
+}
+#bookKaro .brandwithPrice22
+{
+    display: none;
+}
+#bookKaro .brandwithPrice23
+{
+    display: none;
+}
+#bookKaro .brandwithPrice24
+{
+    display: none;
+}
+#bookKaro .brandwithPrice25
+{
+    display: none;
+}
+#bookKaro .brandwithPrice26
+{
+    display: none;
+}
+#bookKaro .brandwithPrice27
+{
+    display: none;
+}
+#bookKaro .brandwithPrice28
+{
+    display: none;
+}
+#bookKaro .brandwithPrice29
+{
+    display: none;
+}
+#i1
+{
+    display: none;
+}
+#i2
+{
+    display: none;
+}
+#i3
+{
+    display: none;
+}
+#i4
+{
+    display: none;
+}
+#i5
+{
+    display: none;
+}
+#i6
+{
+    display: none;
+}
+#i7
+{
+    display: none;
+}
+#i8
+{
+    display: none;
+}
+
+
+#howmanySeat .mainbox
+{
+  height: 500px; 
+  width: 400px; background-color:white;
+  border-radius: 50px;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 40px;
+  border: 1px solid black;
+  /* display: none; */
+}
+#howmanySeat .mainbox h1
+{
+  padding: 20px;
+  padding-top: 30px;
+  font-size: 20px;
+  color: black;
+  padding-left: 30px;
+  font-weight: bolder;
+}
+#howmanySeat .mainbox .numberbox
+{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+#howmanySeat .mainbox .imagebox
+{
+    margin-left: -170px;
+}
+#howmanySeat .mainbox .selectseat
+{
+   width: 200px;
+   padding-left: 50px;
+}
+
+#howmanySeat .mainbox .totalprice{
+    margin-left: 100px;
+}
+
+#movieRoom 
+{
+  height: 1500px;
+  width: 480;
+  background-color: rgb(187, 214, 248);
+  display: none;
+
+}
+#movieRoom  #nav1
+{
+  gap: 180px;
+  width: 480px;
+}
+#movieRoom  #nav1 .box2 .dltPage
+{
+  font-size: 25px;
+}
+#movieRoom #nav2
+{
+  height: 100px;
+  width: 480px;
+  background-color: rgb(236, 233, 204);
+  display: flex;
+  gap: 5px;
+  height: 80px;
+  padding-bottom: 10px;
+}
+
+#movieRoom #nav2 .firstTime
+{
+ padding-left: 10px;
+ padding-right: 5px;
+ padding-top: 5px;
+  margin-left: 10px;
+ 
+}
+
+#movieRoom #nav2 .secondTime
+{
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+     margin-left: 0px;
+}
+#movieRoom #nav2 .thirdTime
+{
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+     margin-left: 0px;
+}
+#movieRoom #nav2  .fourthTime
+{
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+     margin-left: 0px;
+}
+#movieRoom #nav2 .fiveTime
+{
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+     margin-left: 0px;
+}
+#movieRoom #TicketmainBox .remainingSeat
+{
+margin-left: 100px;
+}
+#movieRoom #TicketmainBox .ticketBox1 .seatBox
+{
+  height: 200px;
+  width: 380px;
+  display: grid;
+  grid-template-columns: repeat(9,1fr );
+  grid-template-rows: repeat(3,1fr);
+  padding-top: 30px;
+  gap: 3px;
+} 
+#movieRoom #TicketmainBox .ticketBox1 .seatBox .tkt1
+{
+  height: 50px;
+  margin-left: 0px;
+}
+/* #movieRoom #TicketmainBox .ticketBox2 .seatBox
+{  
+    height: 200px;
+    width: 380px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6,1fr );
+    grid-template-rows: repeat(3,1fr);
+    padding-top: 30px;
+} */
+#movieRoom #TicketmainBox .ticketBox2 .seatBox
+{
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(9,1fr );
+    grid-template-rows: repeat(3,1fr);
+    padding-top: 10px;
+    gap: 3px;
+} 
+#movieRoom #TicketmainBox .ticketBox2 .seatBox .tkt21
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: green;
+    margin-left: 0px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #movieRoom #TicketmainBox .ticketBox2 .seatBox .tkt41
+  {
+    height: 50px;
+    margin-left: 0px;
+  }
+  #movieRoom #TicketmainBox .ticketBox4 .seatBox
+{
+    height: 300px;
+    width: 380px;
+    display: grid;
+    grid-template-columns: repeat(9,1fr );
+    grid-template-rows: repeat(3,1fr);
+    padding-top: 0px;
+    gap: 3px;
+    padding-bottom: 50px;
+  
+} 
+#movieRoom #TicketmainBox .ticketBox4 .seatBox .tkt61
+{
+  height: 50px;
+  margin-left: 0px;
+}
+#movieRoom #TicketmainBox .ticketBox4 .seatBox .tkt81
+{
+  height: 50px;
+  margin-left: 0px;
+}
+#movieRoom #TicketmainBox .submit
+{
+    height: 50px;
+   width: 400px;
+    padding-left: 130px;
+     padding-top: 10px;
+      border-radius: 20px;
+      margin-top: 20px;
+       font-size: 25px; 
+       margin-left: 30px;
+        font-weight: bold;
+         background-color: blue;
+}
+
+#bookingform
+{
+  height: 1200px;
+  width: 475px;
+  background-color: transparent;
+  border-radius: 20px;
+  margin-left: 5px;
+
+  border: 2px solid whitesmoke;
+  /* background-image: url(image/mv3.avif); */
+ 
+  /* display: none; */
+}
+#bookingform form .data h4
+{
+  padding: 12px;
+  font-size: 20px;
+  margin-left: 10px;
+  color: white;
+  
+}
+#bookingform form .data input
+{
+  border-radius: 20px;
+  padding: 20px 20px;
+  height: 30px;
+  width: 300px;
+  margin-left: 10px;
+  
+}
+
+
+
+
+
+
+
+  
+}
